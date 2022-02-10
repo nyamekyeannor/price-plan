@@ -58,6 +58,9 @@ section {
   padding: 2rem 0;
   font-weight: bold;
 }
+ul .free {
+  color: rgba(255, 0, 0, 0.74);
+}
 
 .pricingItem-price .price {
   font-size: 4rem;
@@ -72,7 +75,7 @@ section {
 .pricingItem-price .period {
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  color: red;
+  color: rgba(255, 0, 0, 0.74);
 }
 
 .pricingItem-info {
@@ -99,4 +102,17 @@ section {
   background-color: #111;
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .pricing-items {
+    flex-direction: column;
+  }
+  .pricing-top h1 {
+    margin: 0;
+  }
+  .pricing-top p {
+    margin: 0;
+    margin-top: 1rem;
+  }
 }
